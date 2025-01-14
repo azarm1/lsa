@@ -23,16 +23,6 @@ header {
     z-index: 1000; /* Ensures it stays on top */
 }
 
-/* adjusts layout for smaller scren */
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    nav ul li {
-        margin: 10px 0;
-    }
-}
 .navbar ul::before {
     content: "LSA LOGO";
     font-weight: bold;
@@ -64,10 +54,45 @@ nav ul li a {
 .navbar a:hover{
     background-color: rgb(68, 0, 0);
 }
-/*colors the active page */
+/*colors the active */
 .navbar ul li a.active {
     background-color: #800;
     font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Small Screens (Dropdown Menu) */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none; /* Hide the navbar */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        background: #600;
+        width: 100%;
+    }
+
+    .navbar ul.show {
+        display: flex; /* Show the menu when toggled */
+    }
+
+    .menu-toggle {
+        display: block; /* Show the toggle button */
+        background: #600;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        text-align: right;
+        width: 100%;
+    }
+
+    .menu-toggle:hover {
+        background-color: rgb(68, 0, 0);
+    }
 }
 
 /* Section Styles */

@@ -12,6 +12,7 @@
         <p>Connecting Lebanese culture and students at McMaster University.</p>
     </header>
     <nav class = "navbar">
+        <button class="menu-toggle">☰ Menu</button> <!-- Dropdown button -->
         <ul>
             <li><a href="">Home</a></li>
             <li><a href="">Events</a></li>
@@ -31,5 +32,14 @@
     <footer>
         <p>&copy; 2024 Lebanese Students Association. All rights reserved.</p>
     </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.navbar ul');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
 </body>
+
 </html>
