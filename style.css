@@ -17,12 +17,36 @@ header {
 }
 
 /* Navigation Styles */
-nav ul {
-    list-style: none;
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+/* adjusts layout for smaller scren */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+.navbar ul::before {
+    content: "LSA LOGO";
+    font-weight: bold;
+    color: #fff;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     background: #600;
 }
 
@@ -33,12 +57,24 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.navbar a:hover{
+    background-color: rgb(68, 0, 0);
+}
+/*colors the active page */
+.navbar ul li a.active {
+    background-color: #800;
+    font-weight: bold;
 }
 
 /* Section Styles */
 main {
     padding: 20px;
 }
+
 
 section {
     margin-bottom: 20px;
