@@ -10,25 +10,35 @@ body {
 
 /* Header Styles */
 header {
-    background: rgb(200, 0, 0);
-    color: #fff;
     padding: 20px;
     text-align: center;
+    background-image: url('Images/lsa-backdrop.png'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    height: 200px; /* Adjust height as needed */
+    color: white; /* Adjust text color for visibility */
+    align-items: center;
 }
 
 /* Navigation Styles */
+
+/* Logo container */
 .navbar {
+    display: flex; /* Align children horizontally */
+    align-items: center; /* Vertically center logo and menu */
+    justify-content: space-between; /* Space between logo and menu */
+    background: #600;
+    padding: 10px 20px; /* Adjust spacing as needed */
     position: sticky;
     top: 0;
     z-index: 1000; /* Ensures it stays on top */
 }
 
-.navbar ul::before {
-    content: "LSA LOGO";
-    font-weight: bold;
-    color: #fff;
-    margin-right: auto;
-    padding: 10px;
+.navbar .logo img {
+    height: 65px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures proper spacing */
 }
 
 .navbar ul {
@@ -56,7 +66,7 @@ nav ul li a {
 }
 /*colors the active */
 .navbar ul li a.active {
-    background-color: #800;
+    background-color: rgb(206, 23, 23);
     font-weight: bold;
 }
 
@@ -66,10 +76,14 @@ nav ul li a {
 
 /* Small Screens (Dropdown Menu) */
 @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack logo, button, and menu vertically */
+        align-items: stretch; /* Make all items span the full width */
+    }
     .navbar ul {
         display: none; /* Hide the navbar */
         flex-direction: column; /* Stack items vertically */
-        align-items: center;
+        align-items: stretch;
         background: #600;
         width: 100%;
     }
@@ -86,7 +100,7 @@ nav ul li a {
         padding: 10px;
         font-size: 18px;
         cursor: pointer;
-        text-align: right;
+        text-align: left;
         width: 100%;
     }
 
@@ -113,7 +127,7 @@ section {
 footer {
     text-align: center;
     padding: 10px 0;
-    background: rgb(200, 0, 0);
+    background: #600;
     color: #fff;
     margin-top: 20px;
 }
