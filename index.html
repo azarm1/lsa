@@ -7,31 +7,169 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Lebanese Students Association</h1>
-        <p>Connecting Lebanese culture and students at McMaster University.</p>
-    </header>
-    <nav class = "navbar">
+    <nav class="navbar">
         <div class="logo">
             <img src="Images/lsa_logo-circle.png" alt="logo" />
         </div>
-        <button class="menu-toggle">☰ Menu</button> <!-- Dropdown button -->
+        <button class="menu-toggle">☰ Menu</button>
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./events.html">Events</a></li>
-            <li><a href="./team.html">Team</a></li>
-            <li><a href="./sponsors.html">Sponsors</a></li>
-            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <main>
+        <section id="home">
+            <div class="header-content">
+                <h1>Lebanese Students Association</h1>
+                <p class="tagline">Connecting Lebanese culture and students at McMaster University</p>
+                <div class="cta-buttons">
+                    <a href="#events" class="cta-button">Upcoming Events</a>
+                </div>
+            </div>
+        </section>
+
         <section id="about">
             <h2>About Us</h2>
-            <p>The Lebanese Students Association (LSA) celebrates Lebanese culture, traditions, and heritage. Join us for cultural events, networking opportunities, and more!
-            </p>
+            <p>The Lebanese Students Association (LSA) celebrates Lebanese culture, traditions, and heritage. Join us for cultural events, networking opportunities, and more!</p>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>Cultural Events</h3>
+                    <p>Experience authentic Lebanese traditions through our cultural celebrations and events.</p>
+                </div>
+                <div class="feature">
+                    <h3>Networking</h3>
+                    <p>Connect with fellow Lebanese students and professionals in our community.</p>
+                </div>
+                <div class="feature">
+                    <h3>Community</h3>
+                    <p>Join a vibrant community that celebrates diversity and cultural exchange.</p>
+                </div>
+            </div>
         </section>
-        
+
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <h3>Cultural Food Festival</h3>
+                    <p class="event-date">March 15, 2024</p>
+                    <p>Join us for an evening of authentic Lebanese cuisine and cultural performances!</p>
+                </div>
+                <div class="event-card">
+                    <h3>Networking Night</h3>
+                    <p class="event-date">April 5, 2024</p>
+                    <p>Connect with Lebanese professionals and expand your network.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="team">
+            <h2>Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="Images/placeholder.jpg" alt="Team Member">
+                    <h3>President</h3>
+                    <p>Matthew Chalouhi</p>
+                </div>
+                <div class="team-member">
+                    <img src="Images/placeholder.jpg" alt="Team Member">
+                    <h3>Co-Vice President</h3>
+                    <p>Tala Soubra</p>
+                </div>
+                <div class="team-member">
+                    <img src="Images/placeholder.jpg" alt="Team Member">
+                    <h3>Co-Vice President</h3>
+                    <p>Jude Slim</p>
+                </div>
+                <div class="team-member">
+                    <img src="Images/placeholder.jpg" alt="Team Member">
+                    <h3>Events Coordinator</h3>
+                    <p>Maya Azar</p>
+                </div>
+                <div class="team-member">
+                    <img src="Images/placeholder.jpg" alt="Team Member">
+                    <h3>Events Coordinator</h3>
+                    <p>Kinda Chehab</p>
+                </div>
+                <div class="team-member">
+                    <img src="Images/placeholder.jpg" alt="Team Member">
+                    <h3>Events Coordinator</h3>
+                    <p>Gaïa Najem</p>
+                </div>
+                <div class="team-member">
+                    <img src="Images/placeholder.jpg" alt="Team Member">
+                    <h3>Events Coordinator</h3>
+                    <p>Your Name</p>
+                </div>
+                <div class="team-member">
+                    <img src="Images/placeholder.jpg" alt="Team Member">
+                    <h3>Head of Social Media</h3>
+                    <p>Naya Abdo</p>
+                </div>
+                <div class="team-member">
+                    <img src="Images/placeholder.jpg" alt="Team Member">
+                    <h3>Social Media</h3>
+                    <p>Mina Diab</p>
+                </div>
+                <div class="team-member">
+                    <img src="Images/placeholder.jpg" alt="Team Member">
+                    <h3>Treasurer</h3>
+                    <p>Ziad Sinno</p>
+                </div>
+                <div class="team-member">
+                    <img src="Images/placeholder.jpg" alt="Team Member">
+                    <h3>Treasurer</h3>
+                    <p>Aya ---</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sponsors">
+            <h2>Our Sponsors</h2>
+            <div class="sponsors-grid">
+                <div class="sponsor-card">
+                    <img src="Images/placeholder.jpg" alt="Sponsor">
+                </div>
+                <div class="sponsor-card">
+                    <img src="Images/placeholder.jpg" alt="Sponsor">
+                </div>
+                <div class="sponsor-card">
+                    <img src="Images/placeholder.jpg" alt="Sponsor">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Email: lsa@mcmaster.ca</p>
+                    <p>Instagram: @mcmasterlsa</p>
+                    <p>Facebook: McMaster LSA</p>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="social-media">
+            <h2>Connect With Us</h2>
+            <div class="social-links">
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Lebanese Students Association. All rights reserved.</p>
