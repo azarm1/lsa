@@ -283,12 +283,12 @@ section h3 {
 
 .carousel {
     width: 100%;
-    max-width: 500px;  /* 👈 limits the size */
-    margin: 20px auto; /* 👈 centers carousel and adds spacing */
+    max-width: 500px;  /* limits the size */
+    margin: 20px auto; /* centers carousel and adds spacing */
     position: relative;
     overflow: hidden;
-    border-radius: 10px; /* optional, for rounded corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* optional, for a soft shadow */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
   }
   
   .slides {
@@ -297,8 +297,8 @@ section h3 {
   
   .slide1, .slide2 {
     width: 100%;
-    height: auto; /* 👈 keeps the image proportional */
-    display: block; /* 👈 removes any weird spacing */
+    height: auto; /* keeps the image proportional */
+    display: block; /* removes any weird spacing */
   }
   
   .prev, .next {
@@ -486,6 +486,20 @@ footer {
 .social-link:hover {
     background: #800;
     transform: translateY(-2px);
+}
+/* Socials Grid */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.social-container {
+    text-align: center;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
 }
 
 /* Responsive Design */
