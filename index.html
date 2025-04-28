@@ -60,14 +60,39 @@
             <h2>Our Events</h2>
             <div class="events-grid">
                 <div class="event-card">
-                    <h3>Cultural Food Festival</h3>
-                    <p class="event-date">March 15, 2024</p>
-                    <p>Join us for an evening of authentic Lebanese cuisine and cultural performances!</p>
+                    <h3>Sahret Lebnan 🎲</h3>
+                    <p class="event-date">  March 6, 2024</p>
+                    <p>An exciting Game Night filled with fun, laughter, and friendly competition! Members had the chance to meet new people, build connections, and enjoy a variety of games in a welcoming and energetic atmosphere.</p>
+                    <div class="carousel">
+                        <div class="slides">
+                          <img src="Images/GameNight/gamenight1.png" alt="Image 1" class="slide1">
+                          <img src="Images/GameNight/gamenight2.png" alt="Image 2" class="slide1">
+                          <img src="Images/GameNight/gamenight3.png" alt="Image 3" class="slide1">
+
+                          <button class="prev" onclick="changeSlide1(-1)">&#10094;</button>
+                          <button class="next" onclick="changeSlide1(1)">&#10095;</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="event-card">
-                    <h3>Networking Night</h3>
-                    <p class="event-date">April 5, 2024</p>
-                    <p>Connect with Lebanese professionals and expand your network.</p>
+                    <h3> Wein El Mic 🎤</h3>
+                    <p class="event-date">April 3, 2025</p>
+                    <p>LSA hosted a lively Karaoke Night where members came together to sing, dance, and celebrate with dabke. The night was full of energy, music, and great memories, bringing everyone closer through laughter and tradition.</p>
+                    <div class="carousel">
+                        <div class="slides">
+                          <img src="Images/Weinelmic_2025/100_0076.JPG" alt="Image 1" class="slide2">
+                          <img src="Images/Weinelmic_2025/100_0077.JPG" alt="Image 2" class="slide2">
+                          <img src="Images/Weinelmic_2025/100_0078.JPG" alt="Image 3" class="slide2">
+                          <img src="Images/Weinelmic_2025/100_0080.JPG" alt="Image 4" class="slide2">
+                          <img src="Images/Weinelmic_2025/100_0082.JPG" alt="Image 5" class="slide2">
+                          <img src="Images/Weinelmic_2025/100_0083.JPG" alt="Image 6" class="slide2">
+                          <img src="Images/Weinelmic_2025/100_0084.JPG" alt="Image 7" class="slide2">
+                          <img src="Images/Weinelmic_2025/100_0085.JPG" alt="Image 8" class="slide2">
+
+                          <button class="prev" onclick="changeSlide2(-1)">&#10094;</button>
+                          <button class="next" onclick="changeSlide2(1)">&#10095;</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -151,12 +176,7 @@
                     <p>Instagram: @mcmasterlsa</p>
                     <p>Facebook: McMaster LSA</p>
                 </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Message" required></textarea>
-                    <button type="submit" class="cta-button">Send Message</button>
-                </form>
+                
             </div>
         </section>
 
@@ -172,14 +192,8 @@
     <footer>
         <p>&copy; 2024 Lebanese Students Association. All rights reserved.</p>
     </footer>
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const menu = document.querySelector('.navbar ul');
-
-        menuToggle.addEventListener('click', () => {
-            menu.classList.toggle('show');
-        });
-    </script>
+    
+    <script src="script.js"></script>
 </body>
 
 </html>

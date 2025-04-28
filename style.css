@@ -281,6 +281,51 @@ section h3 {
     margin: 10px 0;
 }
 
+.carousel {
+    width: 100%;
+    max-width: 500px;  /* 👈 limits the size */
+    margin: 20px auto; /* 👈 centers carousel and adds spacing */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* optional, for rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* optional, for a soft shadow */
+  }
+  
+  .slides {
+    position: relative;
+  }
+  
+  .slide1, .slide2 {
+    width: 100%;
+    height: auto; /* 👈 keeps the image proportional */
+    display: block; /* 👈 removes any weird spacing */
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 5px;
+    user-select: none;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+
 /* Team Grid */
 .team-grid {
     display: grid;
@@ -348,7 +393,7 @@ section h3 {
 .contact-info {
     padding: 20px;
     background: #f8f8f8;
-    border-radius: 8px;
+    border-radius: 20px;
 }
 
 .contact-form {
