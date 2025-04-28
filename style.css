@@ -544,4 +544,20 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
+    .carousel {
+        max-width: 100%; /* 👈 Make carousel fit small screens */
+        margin: 20px auto;
+      }
+    
+      .slide1, .slide2 {
+        width: 100%; /* 👈 Images should fully shrink to container */
+        height: auto;
+      }
+    
+      .prev, .next {
+        font-size: 14px; /* 👈 Smaller buttons for phones */
+        padding: 8px;
+        top: 45%; /* Adjust slightly */
+      }
 }
