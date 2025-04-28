@@ -299,6 +299,7 @@ section h3 {
     width: 100%;
     height: auto; /* keeps the image proportional */
     display: block; /* removes any weird spacing */
+    max-width: 100%; 
   }
   
   .prev, .next {
@@ -546,7 +547,8 @@ footer {
     }
 
     .carousel {
-        max-width: 100%; /* 👈 Make carousel fit small screens */
+        width: 90%; /* 👈 Make carousel fit small screens */
+        max-width: 400px;  /* 👈 Optional: limit max size */
         margin: 20px auto;
       }
     
